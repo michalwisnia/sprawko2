@@ -1,0 +1,68 @@
+% !TeX spellcheck = pl_PL
+\documentclass[]{article}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{geometry}
+\graphicspath{{./images/}}
+
+
+% to są te tabelki co były w wordzie a nie było w TeXie
+
+\begin{document}
+
+\begin{table}[h]
+	\centering
+	\caption{Porównanie czasów wykonywania na różnych maszynach}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		
+		 & Maszyna 1 & Maszyna 2 \\ \hline
+		tai20 & 295108 & 294899 \\ \hline
+		tai21 & 427876 & 431494 \\ \hline
+		tai22 & 392651 & 380268 \\ \hline
+		tai23 & 371395 & 370940 \\ \hline
+		tai24 & 414031 & 399364 \\ \hline
+		tai25 & 395496 & 396084 \\ \hline
+		
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+	\centering
+	\caption{Czas w zależności od liczby wczytanych zadań}
+	\begin{tabular}{|p{.3\textwidth}|p{.3\textwidth}|p{.3\textwidth}|}
+		\hline
+		
+		Liczba wczytanych pierwszych zadań  & Średni czas wykonania algorytmu (nanosekundy) na maszynie 1  & Średni czas wykonania algorytmu (nanosekundy) na maszynie 2  \\ \hline
+		1  & 7054  & 7631  \\ \hline
+		2  & 13431  & 13346  \\ \hline
+		3  & 22463  & 23135  \\ \hline
+		4  & 42760  & 42685  \\ \hline
+		5  & 47133  & 49130  \\ \hline
+		6  & 52133  & 53746  \\ \hline
+		7  & 76962  & 77403  \\ \hline
+		8  & 98902  & 97968  \\ \hline
+		9  & 106721  & 112050  \\ \hline
+		10  & 149067  & 150758  \\ \hline
+		11  & 183171  & 183362  \\ \hline
+		12  & 166781  & 174118  \\ \hline
+		13  & 196710  & 197134  \\ \hline
+		14  & 219794  & 223420  \\ \hline
+		15  & 279682  & 277783  \\ \hline
+		16  & 288087  & 275100  \\ \hline
+		17  & 277483  & 287026  \\ \hline
+		18  & 313943  & 332040  \\ \hline
+		19  & 354713  & 402332  \\ \hline
+		20  & 383007  & 404426 \\ \hline
+		
+	\end{tabular}
+\end{table}
+
+\end{document}
